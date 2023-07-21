@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Basketball Scorecard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__inner">
+        <h2 class="container__heading">HOME</h2>
+        <div class="container__placeholder" id="home_score">0</div>
+        <span class="container__buttons">
+          <button class="container__btn" id="home_plusone" onclick="homeOne()">
+            +1
+          </button>
+          <button class="container__btn" id="home_plustwo" onclick="homeTwo()">
+            +2
+          </button>
+          <button
+            class="container__btn"
+            id="home_plusthree"
+            onclick="homeThree()"
+          >
+            +3
+          </button>
+        </span>
+      </div>
+      <div class="container__inner">
+        <h2 class="container__heading">GUEST</h2>
+        <div class="container__placeholder" id="guest_score">0</div>
+        <span class="container__buttons">
+          <button
+            class="container__btn"
+            id="guest_plusone"
+            onclick="guestOne()"
+          >
+            +1
+          </button>
+          <button
+            class="container__btn"
+            id="guest_plustwo"
+            onclick="guestTwo()"
+          >
+            +2
+          </button>
+          <button
+            class="container__btn"
+            id="guest_plusthree"
+            onclick="guestThree()"
+          >
+            +3
+          </button>
+        </span>
+      </div>
+    </div>
+    <footer>
+      <p>
+        <a href="#" class="game__reset" onclick="resetGame()">Reset the game</a>
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
